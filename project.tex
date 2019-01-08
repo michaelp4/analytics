@@ -1,0 +1,163 @@
+\documentclass[11pt,fleqn]{article}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% template that does not use Revtex4
+%%% but allows special fonts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Please use this template.
+%%% Scroll down until you reach the \begin{document} part of the file
+%%% Process the file in the Latex site 
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Page setup
+\topmargin -1.5cm      
+\oddsidemargin -0.04cm   
+\evensidemargin -0.04cm  
+\textwidth 16.59cm
+\textheight 24cm 
+\setlength{\parindent}{0cm} 
+\setlength{\parskip}{0cm} 
+
+
+% Fonts
+\usepackage{latexsym}
+\usepackage{amsmath} 
+\usepackage{amssymb} 
+\usepackage{bm}
+\usepackage{graphicx}
+
+
+% Math symbols I
+\newcommand{\sinc}{\mbox{sinc}}
+\newcommand{\const}{\mbox{const}}
+\newcommand{\trc}{\mbox{trace}}
+\newcommand{\intt}{\int\!\!\!\!\int }
+\newcommand{\ointt}{\int\!\!\!\!\int\!\!\!\!\!\circ\ }
+\newcommand{\ar}{\mathsf r}
+\newcommand{\im}{\mbox{Im}}
+\newcommand{\re}{\mbox{Re}}
+
+% Math symbols II
+\newcommand{\eexp}{\mbox{e}^}
+\newcommand{\bra}{\left\langle}
+\newcommand{\ket}{\right\rangle}
+
+% Mass symbol
+\newcommand{\mass}{\mathsf{m}} 
+\newcommand{\Mass}{\mathsf{M}} 
+
+% More math commands
+\newcommand{\tbox}[1]{\mbox{\tiny #1}}
+\newcommand{\bmsf}[1]{\bm{\mathsf{#1}}} 
+\newcommand{\amatrix}[1]{\begin{matrix} #1 \end{matrix}} 
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+
+% Other commands
+\newcommand{\hide}[1]{}
+\newcommand{\drawline}{\begin{picture}(500,1)\line(1,0){500}\end{picture}}
+\newcommand{\bitem}{$\bullet$ \ \ \ }
+\newcommand{\Cn}[1]{\begin{center} #1 \end{center}}
+\newcommand{\mpg}[2][1.0\hsize]{\begin{minipage}[b]{#1}{#2}\end{minipage}}
+\newcommand{\Dn}{\vspace*{3mm}}
+
+% Figures
+\newcommand{\putgraph}[2][0.30\hsize]{\includegraphics[width=#1]{#2}}
+
+% heading
+\newcommand{\exnumber}[1]{\newcommand{\exnum}{#1}}
+\newcommand{\heading}[1]{\begin{center} {\Large {\bf Ex\exnum:} #1} \end{center}}
+\newcommand{\auname}[1]{\begin{center} {\bf Submitted by:} #1 \end{center}}
+
+
+\begin{document} %This is where you start editing things%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\exnumber{0909A3}
+\heading{The generalized canonical transformation} 
+\auname{Michael Pukshanski, Lior Weitzhandler}
+
+
+{\bf The problem:}
+\Dn
+A system is described by the Hamiltonian H(q,p,t). The coordinate q is transformed q $\to$ Q=$\psi$(q,t)
+\begin{enumerate}
+\item Find the most general transformation p $\to$ P(q,p,t) so that (q,p) $\to$ (Q,P) will be canonical.
+\item Calculate the appropriate generating function (explain why $F_1$(q,Q,t) isn't relevant).
+\item Given the new Hamiltonian H'=0. Find the original Hamiltonian.
+\item Prove that for $\psi$(q+$\omega$t), the original Hamiltonian is a function of p alone. What does it mean?
+\end{enumerate}
+\Dn\Dn
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\bf The solution:}
+
+\Dn
+\begin{enumerate}
+\item answer 1
+\item answer 2
+\item answer 3
+\item answer 4
+%%%%%%%%%%%%%%%%
+\item This is how you write an equation
+\begin{equation}
+\mathcal{I} =\int \limits_0^z  d^4x \sqrt{-g}\left[\varphi^2\left(\mathcal{R}-6sg^{\mu \nu} \kappa_\mu \kappa_\nu\right) + 4 \omega g^{\mu \nu}D_\mu \varphi D_\nu \varphi + \lambda \varphi^4 + \frac{1}{4}g^{\mu \nu} g^{\lambda \sigma}X_{\mu \lambda}X_{\nu \sigma}\right].
+\end{equation}
+
+%%%%%%%%%%%%%%%
+\item If you wish to add a set of equations (add the ampersands to align the two equations):
+\begin{eqnarray}
+ s &=& \frac{3+2\omega}{2\omega}\neq 1,\\
+ D_\mu \varphi &=& \varphi_{;\mu} + s \kappa_\mu \varphi,
+\end{eqnarray}
+
+If you wish to have equations with no numbers add an asterisk
+\begin{eqnarray*}
+&& g^{\mu \nu} \left( \varphi^2_{;\mu} + 2 \kappa_\mu \varphi^2\right)_{;\nu} = \frac{\partial W_{eff}(\varphi^2)}{\partial \varphi^2}, \\
+&& \frac{\partial W_{eff}(\varphi^2)}{\partial \varphi^2} = \frac{1}{3+ 2} \omega \left(\frac{1}{2} \varphi V'(\varphi) - 2V(\varphi)\right).
+\end{eqnarray*}
+To write a vector
+\begin{equation}
+\vec{r} = x \hat{x} + y \hat{y} + z\hat{z} \quad ; \quad \vec{r}_i
+= \left|\vec{r}\right|\hat{r} \end{equation}
+To write a matrix
+\begin{equation}
+\lambda_1 
+= \left( \amatrix { 0 & 1 & 0 \cr 1 & 0 & 0 \cr 0 & 0 & 0}\right), \text{\qquad ``\textbackslash qquad'' makes space in equations and this is how you add text.}
+\end{equation}
+You can also use ``align'' to tightly align the equal sign, i.e ``='' is aligned: see Eq.~\eqref{eq:align1} and Eq.~\eqref{eq:align2},  also note that {\underline{\bf every end}} of an  equation needs to be punctuated, i.e : ``,'' or ``.'', according to the sentence. 
+\begin{align}
+\lambda_7 
+&= \left( \amatrix { 0 & 0 & 0 \cr 0 & 0 & -i \cr 0 & i & 0}\right), \label{eq:align1}\\
+ \lambda_8 
+&= \frac{1}{\sqrt{3}}\left( \amatrix { 1 & 0 & 0 \cr 0 & 1 & 0 \cr 0 & -2 & 0}\right),\label{eq:align2}
+\end{align}
+and centered
+\begin{align*}
+&&\left[\frac{\lambda_i}{2},\frac{\lambda_j}{2}\right] &= i \displaystyle\sum_{k=1}^{n} f^{ijk}\frac{\lambda_k}{2}, \\
+&&f^{147}=f^{165}=f^{246}&=f^{257}=f^{345}=f^{376}= \frac{1}{2}.
+\end{align*}
+
+%%%%%%%%%%%%%%%
+\item Known arguments are \textit{{\bf not} written in  italic mode}, some have special syntax in LaTeX otherwise just  use ``\textbackslash mathrm'': 
+\begin{equation}
+\cos (\omega t); \quad  \sin (\omega t);\quad  \mathrm{Tr \left[ \hat A\right] };\quad  \mathrm{det \left[ \hat {\mathcal{A}} \right] }; \quad \tan(\omega t); \quad  \eexp{\frac{t}{\tau}};\quad  \exp{\left(\frac{t}{\tau}\right)}; \quad \log\left(\frac{t}{\tau}\right).
+\end{equation}For all Latex related knowledge go to https://en.wikibooks.org/wiki/LaTeX\\
+To include a picture use, note that the picture file has to be in the same folder as the *.tex file.
+
+%\includegraphics[scale=0.6]{hp.pdf}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document} 
