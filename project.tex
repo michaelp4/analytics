@@ -104,9 +104,43 @@ A system is described by the Hamiltonian H(q,p,t). The coordinate q is transform
 
 \Dn
 \begin{enumerate}
-\item lior is stupid
-\item answer 2
-\item answer 3
+\item We will derive here the transformation for P:
+\begin{equation}
+\left[Q,P\right]=\frac{\partial Q}{\partial q}\cdot\frac{\partial P}{\partial p}-\frac{\partial Q}{\partial p}\frac{\partial P}{\partial q}=\frac{\partial Q}{\partial q}\cdot\frac{\partial P}{\partial p}=\frac{\partial \psi(q,t)}{\partial q}\cdot\frac{\partial P}{\partial p}=1
+\end{equation}
+\begin{equation}
+\frac{\partial P}{\partial p}=\frac{\partial q}{\partial \psi}=\frac{\partial q}{\partial Q}
+\Rightarrow \boxed {P=p\cdot\frac{\partial q}{\partial Q}+f(q,t)}
+\end{equation}
+\item Finding the generative function:
+\newline
+We will choose the third class of generative function, And we will define q with (Q,t), leading to q=g(Q,t), because we have Q=$\psi$(q,t). So f can be expressed with (Q,t).
+\begin{equation}
+F_{3}(p,Q,t), \newline (1)\; -P=\frac{\partial F_{3}}{\partial Q},\; (2)\; -q=\frac{\partial F_{3}}{\partial p}
+\end{equation}
+\newline
+\begin{equation}
+(1) \;\frac{\partial F_{3}}{\partial Q}=-p\cdot\frac{\partial q}{\partial Q}-f(q,t)
+\end{equation}
+\begin{equation}
+F_{3}=-pq-\int_{}^{} f(Q,t)dQ+h(p,t)
+\end{equation}
+\begin{equation}
+(2)\:\frac{\partial F_{3}}{\partial p}=-q+\frac{\partial h}{\partial p}=-q \; \Rightarrow\; h=l(t)
+\end{equation}
+\begin{equation}
+F_{3}=-pq-\int_{}^{} f(Q,t)dQ+l(t) \Rightarrow \boxed{F_{3}=-p\cdot g(Q,t)-\int_{}^{} f(Q,t)dQ}
+\end{equation}
+Where we dropped the function that depends only on time because it cant affect the equation of motion.
+\item Here we will find the original Hamiltonian.
+\newline
+we know that :
+\begin{equation}
+0=\grave{\mathcal{H}}=\mathcal{H}+\frac{\partial F_{3}}{\partial t}
+\end{equation}
+\begin{equation}
+\mathcal{H}=-\frac{\partial F_{3}}{\partial t}\Rightarrow\boxed{\mathcal{H}=\frac{\partial (p\cdot g(Q,t))}{\partial t}+\frac{\partial (\int_{}^{}f(g(q,t),t)dQ)}{\partial t}}
+\end{equation}
 \item answer 4
 %%%%%%%%%%%%%%%%
 \item This is how you write an equation
