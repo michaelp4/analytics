@@ -94,7 +94,7 @@ A system is described by the Hamiltonian H(q,p,t). The coordinate q is transform
 \item Find the most general transformation p $\to$ P(q,p,t) so that (q,p) $\to$ (Q,P) will be canonical.
 \item Calculate the appropriate generating function (explain why $F_1$(q,Q,t) isn't relevant).
 \item Given the new Hamiltonian H'=0. Find the original Hamiltonian.
-\item Prove that for $\psi$(q+$\omega$t), the original Hamiltonian is a function of p alone. What does it mean?
+\item Prove that for $\psi$(q+$\omega$t), the original Hamiltonian is a function that is linear to p. What does it mean?
 \end{enumerate}
 \Dn\Dn
 
@@ -117,7 +117,7 @@ A system is described by the Hamiltonian H(q,p,t). The coordinate q is transform
 \end{equation}
 \item Finding the generative function:
 \newline
-We will choose the third class of generative function, And we will define q with (Q,t), leading to q=g(Q,t), because we have Q=$\psi$(q,t). So f can be expressed with (Q,t).
+We will choose the third class of generative function, And we will define q as a function of  Q and t, leading to q=g(Q,t), because it is given that Q=$\psi$(q,t). So f can be expressed with (Q,t).
 \begin{equation}
 F_{3}(p,Q,t)
 \end{equation}
@@ -143,10 +143,10 @@ F_{3}=-pq-\int_{}^{} f(Q,t)dQ+l(t)
 \begin{equation}
 \Rightarrow \boxed{F_{3}=-p\cdot g(Q,t)-\int_{}^{} f(Q,t)dQ}
 \end{equation}
-Where we dropped the function that depends only on time because it cant affect the equation of motion.
+We ignored the function that depends only on time because it can't affect the equation of motion.
 \item Here we will find the original Hamiltonian.
 \newline
-we know that :
+we know that:
 \begin{equation}
 0=\grave{\mathcal{H}}=\mathcal{H}+\frac{\partial F_{3}}{\partial t}
 \end{equation}
