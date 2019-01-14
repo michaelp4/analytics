@@ -94,7 +94,7 @@ A system is described by the Hamiltonian H(q,p,t). The coordinate q is transform
 \item Find the most general transformation p $\to$ P(q,p,t) so that (q,p) $\to$ (Q,P) will be canonical.
 \item Calculate the appropriate generating function (explain why $F_1$(q,Q,t) isn't relevant).
 \item Given the new Hamiltonian H'=0. Find the original Hamiltonian.
-\item Prove that for $\psi$(q+$\omega$t), the original Hamiltonian is a function that is linear to p. What does it mean?
+\item Prove that for $\psi$(q+$\omega$t), the original Hamiltonian is a function that is linear to p.
 \end{enumerate}
 \Dn\Dn
 
@@ -115,9 +115,9 @@ A system is described by the Hamiltonian H(q,p,t). The coordinate q is transform
 \Rightarrow 
 \boxed {P=p\cdot\frac{\partial q}{\partial Q}+f(q,t)}
 \end{equation}
-\item Finding the generative function:
+\item Finding the generating function:
 \newline
-We will choose the third class of generative function, And we will define q as a function of  Q and t, leading to q=g(Q,t), because it is given that Q=$\psi$(q,t). So f can be expressed with (Q,t).
+We will choose the third class of generating function, and we will define q as a function of  Q and t, leading to q=g(Q,t) because it is given that Q=$\psi$(q,t). Consequently f can be expressed with Q and t.
 \begin{equation}
 F_{3}(p,Q,t)
 \end{equation}
@@ -129,16 +129,16 @@ F_{3}(p,Q,t)
 \end{equation}
 \newline
 \begin{equation}
-(5): \;\frac{\partial F_{3}}{\partial Q}=-p\cdot\frac{\partial q}{\partial Q}-f(q,t)
+\frac{\partial F_{3}}{\partial Q}=-p\cdot\frac{\partial q}{\partial Q}-f(q,t)
 \end{equation}
 \begin{equation}
-F_{3}=-pq-\int_{}^{} f(Q,t)dQ+h(p,t)
+F_{3}=-pq- \int_{}^{}f(Q,t)dQ+h(p,t)
 \end{equation}
 \begin{equation}
-(6):\;\frac{\partial F_{3}}{\partial p}=-q+\frac{\partial h}{\partial p}=-q \; \Rightarrow\; h=l(t)
+\frac{\partial F_{3}}{\partial p}=-q+\frac{\partial h}{\partial p}=-q \; \Rightarrow\; h=l(t)
 \end{equation}
 \begin{equation}
-F_{3}=-pq-\int_{}^{} f(Q,t)dQ+l(t) 
+F_{3}=-pq- \int_{}^{}f(Q,t)dQ+l(t) 
 \end{equation}
 \begin{equation}
 \Rightarrow \boxed{F_{3}=-p\cdot g(Q,t)-\int_{}^{} f(Q,t)dQ}
@@ -156,54 +156,29 @@ we know that:
 \begin{equation}
 \Rightarrow\boxed{\mathcal{H}=\frac{\partial (p\cdot g(Q,t))}{\partial t}+\frac{\partial (\int_{}^{}f(g(q,t),t)dQ)}{\partial t}}
 \end{equation}
-\item answer 4
-%%%%%%%%%%%%%%%%
-\item This is how you write an equation
+\item Now it is given that q $\to$ Q=$\psi$(q+$\omega$t). We can derive from that the new connection between q and Q:
 \begin{equation}
-\mathcal{I} =\int \limits_0^z  d^4x \sqrt{-g}\left[\varphi^2\left(\mathcal{R}-6sg^{\mu \nu} \kappa_\mu \kappa_\nu\right) + 4 \omega g^{\mu \nu}D_\mu \varphi D_\nu \varphi + \lambda \varphi^4 + \frac{1}{4}g^{\mu \nu} g^{\lambda \sigma}X_{\mu \lambda}X_{\nu \sigma}\right].
+q=u(Q)-\omega t
 \end{equation}
-
-%%%%%%%%%%%%%%%
-\item If you wish to add a set of equations (add the ampersands to align the two equations):
-\begin{eqnarray}
- s &=& \frac{3+2\omega}{2\omega}\neq 1,\\
- D_\mu \varphi &=& \varphi_{;\mu} + s \kappa_\mu \varphi,
-\end{eqnarray}
-
-If you wish to have equations with no numbers add an asterisk
-\begin{eqnarray*}
-&& g^{\mu \nu} \left( \varphi^2_{;\mu} + 2 \kappa_\mu \varphi^2\right)_{;\nu} = \frac{\partial W_{eff}(\varphi^2)}{\partial \varphi^2}, \\
-&& \frac{\partial W_{eff}(\varphi^2)}{\partial \varphi^2} = \frac{1}{3+ 2} \omega \left(\frac{1}{2} \varphi V'(\varphi) - 2V(\varphi)\right).
-\end{eqnarray*}
-To write a vector
+We shall find the original Hamiltonian.
 \begin{equation}
-\vec{r} = x \hat{x} + y \hat{y} + z\hat{z} \quad ; \quad \vec{r}_i
-= \left|\vec{r}\right|\hat{r} \end{equation}
-To write a matrix
-\begin{equation}
-\lambda_1 
-= \left( \amatrix { 0 & 1 & 0 \cr 1 & 0 & 0 \cr 0 & 0 & 0}\right), \text{\qquad ``\textbackslash qquad'' makes space in equations and this is how you add text.}
+\frac{\partial F_{3}}{\partial Q}=-p\cdot\frac{\partial q}{\partial Q}-f(Q,t)=-p\cdot \frac{\partial u}{\partial Q} -f(Q,t)
 \end{equation}
-You can also use ``align'' to tightly align the equal sign, i.e ``='' is aligned: see Eq.~\eqref{eq:align1} and Eq.~\eqref{eq:align2},  also note that {\underline{\bf every end}} of an  equation needs to be punctuated, i.e : ``,'' or ``.'', according to the sentence. 
-\begin{align}
-\lambda_7 
-&= \left( \amatrix { 0 & 0 & 0 \cr 0 & 0 & -i \cr 0 & i & 0}\right), \label{eq:align1}\\
- \lambda_8 
-&= \frac{1}{\sqrt{3}}\left( \amatrix { 1 & 0 & 0 \cr 0 & 1 & 0 \cr 0 & -2 & 0}\right),\label{eq:align2}
-\end{align}
-and centered
-\begin{align*}
-&&\left[\frac{\lambda_i}{2},\frac{\lambda_j}{2}\right] &= i \displaystyle\sum_{k=1}^{n} f^{ijk}\frac{\lambda_k}{2}, \\
-&&f^{147}=f^{165}=f^{246}&=f^{257}=f^{345}=f^{376}= \frac{1}{2}.
-\end{align*}
-
-%%%%%%%%%%%%%%%
-\item Known arguments are \textit{{\bf not} written in  italic mode}, some have special syntax in LaTeX otherwise just  use ``\textbackslash mathrm'': 
 \begin{equation}
-\cos (\omega t); \quad  \sin (\omega t);\quad  \mathrm{Tr \left[ \hat A\right] };\quad  \mathrm{det \left[ \hat {\mathcal{A}} \right] }; \quad \tan(\omega t); \quad  \eexp{\frac{t}{\tau}};\quad  \exp{\left(\frac{t}{\tau}\right)}; \quad \log\left(\frac{t}{\tau}\right).
-\end{equation}For all Latex related knowledge go to https://en.wikibooks.org/wiki/LaTeX\\
-To include a picture use, note that the picture file has to be in the same folder as the *.tex file.
-
+F_{3}=-p\cdot u(Q)-\int_{}^{} f(Q,t)dQ+h(p,t)
+\end{equation}
+\begin{equation}
+\frac{\partial F_{3}}{\partial p}=-u(Q)+\frac{\partial h}{\partial p}=-q=-u(Q)+\omega t \; \Rightarrow\; h(p.t)=\omega t \cdot p
+\end{equation}
+\begin{equation}
+F_{3}=-p\cdot u(Q)-\int_{}^{} f(Q,t)dQ+ \omega t \cdot p
+\end{equation}
+\begin{equation}
+\mathcal{H}=-\frac{\partial F_{3}}{\partial t}
+\end{equation}
+\begin{equation}
+\Rightarrow\boxed{\mathcal{H}=\omega \cdot p+ \frac{\partial (\int_{}^{}f(Q,t)dQ)}{\partial t}}
+\end{equation}
 %\includegraphics[scale=0.6]{hp.pdf}
 \end{enumerate}
 
