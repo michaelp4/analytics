@@ -117,10 +117,7 @@ A system is described by the Hamiltonian H(q,p,t). The coordinate q is transform
 \end{equation}
 \item Finding the generating function:
 \newline
-We will choose the third class of generating function, and we will define q as a function of  Q and t, leading to q=g(Q,t) because it is given that Q=$\psi$(q,t). Consequently f can be expressed with Q and t.
-\begin{equation}
-F_{3}(p,Q,t)
-\end{equation}
+We will choose the third class of generating function $F_{3}$(p,Q,t). For that we will define q as a function of  Q and t, leading to q=g(Q,t), because it is given that Q=$\psi$(q,t). Consequently f can be expressed with Q and t.
 \begin{equation}
 -P=\frac{\partial F_{3}}{\partial Q}
 \end{equation}
@@ -144,6 +141,8 @@ F_{3}=-pq- \int_{}^{}f(Q,t)dQ+l(t)
 \Rightarrow \boxed{F_{3}=-p\cdot g(Q,t)-\int_{}^{} f(Q,t)dQ}
 \end{equation}
 We ignored the function that depends only on time because it can't affect the equation of motion.
+\newline
+The reason $F_1$(q,Q,t) isn't relevant is because it produces p and P from its partial derivatives and we want to use the given transformation q $\to$ Q=$\psi$(q,t). Also, we can see in equation  (8) that if we change there the derivative to q (which will make the generating function be $F_1$) we will get an expression that contains p, but $F_1$ is not depended on p, so we will have a contradiction.
 \item Here we will find the original Hamiltonian.
 \newline
 we know that:
@@ -179,6 +178,7 @@ F_{3}=-p\cdot u(Q)-\int_{}^{} f(Q,t)dQ+ \omega t \cdot p
 \begin{equation}
 \Rightarrow\boxed{\mathcal{H}=\omega \cdot p+ \frac{\partial (\int_{}^{}f(Q,t)dQ)}{\partial t}}
 \end{equation}
+The original Hamiltonian is linear to p as requested.
 %\includegraphics[scale=0.6]{hp.pdf}
 \end{enumerate}
 
